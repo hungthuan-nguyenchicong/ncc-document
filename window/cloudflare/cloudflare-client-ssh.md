@@ -19,3 +19,5 @@ scp E:\README hostname:/home/user/README
 scp -r E:\folder hostname:/home/user/folder
 ## test
 ssh user@hostname -o "ProxyCommand=cloudflared access ssh --hostname %h"
+## fix loi REMOTE HOST IDENTIFICATION HAS CHANGED
+ssh-keygen -R hostname
